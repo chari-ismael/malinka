@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light" data-animations="true" data-density="comfortable">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Malinka Supermarché — Épicerie polonaise et produits d'Europe de l'Est à Faches-Thumesnil. Charcuterie, fromages, conserves, boissons et bien plus. Ouvert jusqu'à 20h.">
+  <meta name="keywords" content="épicerie polonaise, supermarché polonais, Faches-Thumesnil, produits polonais, Europe de l'Est, Lille, kielbasa, pierogi, charcuterie polonaise">
+  <meta name="author" content="Malinka Supermarché">
+  <meta property="og:title" content="Malinka Supermarché | Épicerie Polonaise — Faches-Thumesnil">
+  <meta property="og:description" content="Découvrez notre sélection de produits polonais et d'Europe de l'Est à Faches-Thumesnil, près de Lille.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#D41854">
+  <link rel="canonical" href="https://malinka-supermarche.fr">
+  <title>Malinka Supermarché | Épicerie Polonaise — Faches-Thumesnil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Oswald:wght@300;400;500;600;700&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="assets/img/logo.jpg" type="image/x-icon">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       ANNOUNCEMENT BAR
+  ═══════════════════════════════════════════ -->
+  <div class="announce-bar" role="banner">
+    <div class="announce-inner">
+      <span class="announce-dot"></span>
+      <span>Ouvert aujourd'hui jusqu'à <strong>20h00</strong></span>
+      <span class="announce-sep">·</span>
+      <span>📍 8 Av. de Bordeaux, 59155 Faches-Thumesnil</span>
+      <span class="announce-sep">·</span>
+      <span>☎ <a href="tel:0984031084">09 84 03 10 84</a></span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════════ -->
+  <header class="nav-header" id="navHeader" role="navigation">
+    <nav class="nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Malinka Supermarché - Accueil">
+        <div class="nav-logo-icon" aria-hidden="true">🍓</div>
+        <div class="nav-logo-text">
+          <span class="nav-logo-brand">Malinka</span>
+          <span class="nav-logo-sub">Supermarché</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#produits" class="nav-link">Produits</a></li>
+        <li><a href="#about" class="nav-link">Notre histoire</a></li>
+        <li><a href="#galerie" class="nav-link">Galerie</a></li>
+        <li><a href="#avis" class="nav-link">Avis</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-nav" aria-label="Nous trouver">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Nous trouver
+        </a>
+        <button class="btn-icon" id="settingsToggle" aria-label="Personnaliser l'apparence" title="Personnaliser">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93l-1.41 1.41M12 2v2M4.93 4.93l1.41 1.41M2 12h2m.93 7.07 1.41-1.41M12 20v2m7.07-2.93-1.41-1.41M22 12h-2"/></svg>
+        </button>
+        <button class="btn-icon btn-hamburger" id="menuToggle" aria-label="Menu de navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <ul role="list">
+        <li><a href="#produits" class="mobile-link">Produits</a></li>
+        <li><a href="#about" class="mobile-link">Notre histoire</a></li>
+        <li><a href="#galerie" class="mobile-link">Galerie</a></li>
+        <li><a href="#avis" class="mobile-link">Avis</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+      </ul>
+      <a href="tel:0984031084" class="mobile-cta">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.87 19.79 19.79 0 01.13 2.26 2 2 0 012.11 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.45-.45a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        09 84 03 10 84
+      </a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════════
+         HERO SECTION
+    ═══════════════════════════════════════════ -->
+    <section class="hero" id="hero" aria-labelledby="hero-heading">
+      <div class="hero-bg">
+        <img
+          src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAFu4BlxxuD31uojiux51aX-E3BCaYcqsR0D_t1sinCI3xt_9LQoV72W9SP_sArvSxZWVuLHRK3QOiRhIdqHE8uSS8ZzXTAQdDQWQu5XAHopngT2rJpU2mu4uuBlK4lLO30-rIxy=s2048-v1"
+          alt="Intérieur du Malinka Supermarché, rayon de produits polonais"
+          class="hero-img"
+          loading="eager"
+          fetchpriority="high"
+        >
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="hero-grain" aria-hidden="true"></div>
+      </div>
+
+      <div class="hero-content container">
+        <div class="hero-tag animate-up" aria-label="Épicerie polonaise">
+          <span class="hero-tag-dot" aria-hidden="true"></span>
+          Épicerie spécialisée Europe de l'Est
+        </div>
+        <h1 class="hero-title animate-up" id="hero-heading">
+          <span class="hero-title-line">L'âme de</span>
+          <span class="hero-title-line hero-title-accent">l'Europe de l'Est</span>
+          <span class="hero-title-line">à Faches-Thumesnil</span>
+        </h1>
+        <p class="hero-desc animate-up">
+          Produits polonais authentiques, charcuterie fine, fromages artisanaux et saveurs oubliées — tout sous un même toit, à deux pas de Lille.
+        </p>
+        <div class="hero-ctas animate-up">
+          <a href="#produits" class="btn btn-primary btn-lg">
+            Découvrir nos produits
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#contact" class="btn btn-ghost btn-lg">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Nous trouver
+          </a>
+        </div>
+
+        <div class="hero-stats animate-up" role="list" aria-label="Chiffres clés">
+          <div class="hero-stat" role="listitem">
+            <span class="hero-stat-num">500<span class="hero-stat-plus">+</span></span>
+            <span class="hero-stat-label">Références</span>
+          </div>
+          <div class="hero-stat-div" aria-hidden="true"></div>
+          <div class="hero-stat" role="listitem">
+            <span class="hero-stat-num">10</span>
+            <span class="hero-stat-label">Pays représentés</span>
+          </div>
+          <div class="hero-stat-div" aria-hidden="true"></div>
+          <div class="hero-stat" role="listitem">
+            <span class="hero-stat-num">20h</span>
+            <span class="hero-stat-label">Ouvert jusqu'à</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#produits" class="hero-scroll" aria-label="Faire défiler vers les produits">
+        <span class="hero-scroll-line" aria-hidden="true"></span>
+        <span class="hero-scroll-label">Découvrir</span>
+      </a>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         CATEGORIES BAND
+    ═══════════════════════════════════════════ -->
+    <section class="categories-band" aria-label="Catégories de produits">
+      <div class="container">
+        <div class="categories-scroll" role="list" aria-label="Rayons disponibles">
+          <div class="cat-chip" role="listitem">
+            <span class="cat-chip-icon" aria-hidden="true">🥩</span>
+            <span>Charcuterie</span>
+          </div>
+          <div class="cat-chip" role="listitem">
+            <span class="cat-chip-icon" aria-hidden="true">🧀</span>
+            <span>Fromages</span>
+          </div>
+          <div class="cat-chip" role="listitem">
+            <span class="cat-chip-icon" aria-hidden="true">🥫</span>
+            <span>Conserves</span>
+          </div>
+          <div class="cat-chip" role="listitem">
+            <span class="cat-chip-icon" aria-hidden="true">🍞</span>
+            <span>Boulangerie</span>
+          </div>
+          <div class="cat-chip" role="listitem">
+            <span class="cat-chip-icon" aria-hidden="true">🍺</span>
+            <span>Boissons</span>
+          </div>
+          <div class="cat-chip" role="listitem">
+            <span class="cat-chip-icon" aria-hidden="true">🥟</span>
+            <span>Surgelés</span>
+          </div>
+          <div class="cat-chip" role="listitem">
+            <span class="cat-chip-icon" aria-hidden="true">🍬</span>
+            <span>Confiseries</span>
+          </div>
+          <div class="cat-chip" role="listitem">
+            <span class="cat-chip-icon" aria-hidden="true">🧴</span>
+            <span>Cosmétiques</span>
+          </div>
+          <div class="cat-chip" role="listitem">
+            <span class="cat-chip-icon" aria-hidden="true">🌿</span>
+            <span>Épices &amp; herbes</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         PRODUCTS SECTION
+    ═══════════════════════════════════════════ -->
+    <section class="section products-section" id="produits" aria-labelledby="products-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag animate-fade">Nos rayons</div>
+          <h2 class="section-title animate-up" id="products-heading">
+            Une sélection authentique<br>directement de Pologne
+          </h2>
+          <p class="section-desc animate-up">
+            Nous sélectionnons les meilleurs produits auprès de producteurs polonais et d'Europe de l'Est pour vous offrir une expérience gustative unique.
+          </p>
+        </div>
+
+        <div class="products-grid" role="list">
+
+          <!-- Charcuterie -->
+          <article class="product-card animate-card" role="listitem">
+            <div class="product-card-media product-card-media--meat">
+              <div class="product-card-emoji" aria-hidden="true">🥩</div>
+              <div class="product-card-bg-pattern" aria-hidden="true"></div>
+            </div>
+            <div class="product-card-body">
+              <div class="product-card-tag">Best-seller</div>
+              <h3 class="product-card-title">Charcuterie Polonaise</h3>
+              <p class="product-card-desc">Kiełbasa fumée, Kabanosy, Szynka, Salami Krakowski — une sélection premium de charcuteries artisanales.</p>
+              <ul class="product-list" aria-label="Produits disponibles">
+                <li>Kiełbasa wędzona</li>
+                <li>Kabanosy classiques &amp; fumés</li>
+                <li>Szynka konserwowa</li>
+                <li>Salami Krakowski</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Fromages -->
+          <article class="product-card animate-card" role="listitem">
+            <div class="product-card-media product-card-media--cheese">
+              <div class="product-card-emoji" aria-hidden="true">🧀</div>
+              <div class="product-card-bg-pattern" aria-hidden="true"></div>
+            </div>
+            <div class="product-card-body">
+              <h3 class="product-card-title">Fromages d'Exception</h3>
+              <p class="product-card-desc">Des fromages typiques des régions de montagne polonaises aux spécialités de ferme, chaque goût raconte une histoire.</p>
+              <ul class="product-list" aria-label="Produits disponibles">
+                <li>Oscypek de montagne</li>
+                <li>Twaróg (fromage frais)</li>
+                <li>Ser Żółty (fromage jaune)</li>
+                <li>Bundz artisanal</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Conserves -->
+          <article class="product-card animate-card" role="listitem">
+            <div class="product-card-media product-card-media--preserve">
+              <div class="product-card-emoji" aria-hidden="true">🥫</div>
+              <div class="product-card-bg-pattern" aria-hidden="true"></div>
+            </div>
+            <div class="product-card-body">
+              <div class="product-card-tag product-card-tag--green">Traditionnel</div>
+              <h3 class="product-card-title">Conserves &amp; Bocaux</h3>
+              <p class="product-card-desc">Cornichons fermentés, bigos, kapuśniak, harengs marinés — les trésors de la cuisine polonaise en bocal.</p>
+              <ul class="product-list" aria-label="Produits disponibles">
+                <li>Ogórki kiszone (cornichons)</li>
+                <li>Bigos &amp; Żurek prêts</li>
+                <li>Harengs à la crème</li>
+                <li>Poivrons marinés</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Boulangerie -->
+          <article class="product-card animate-card" role="listitem">
+            <div class="product-card-media product-card-media--bakery">
+              <div class="product-card-emoji" aria-hidden="true">🍞</div>
+              <div class="product-card-bg-pattern" aria-hidden="true"></div>
+            </div>
+            <div class="product-card-body">
+              <h3 class="product-card-title">Boulangerie &amp; Pâtisserie</h3>
+              <p class="product-card-desc">Pain de seigle noir, pain au levain polonais, piernik, makowiec — le goût authentique des boulangeries de Varsovie.</p>
+              <ul class="product-list" aria-label="Produits disponibles">
+                <li>Chleb żytni (pain de seigle)</li>
+                <li>Makowiec (roulé pavot)</li>
+                <li>Piernik (pain d'épices)</li>
+                <li>Rogale &amp; Pączki</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Boissons -->
+          <article class="product-card animate-card" role="listitem">
+            <div class="product-card-media product-card-media--drinks">
+              <div class="product-card-emoji" aria-hidden="true">🍺</div>
+              <div class="product-card-bg-pattern" aria-hidden="true"></div>
+            </div>
+            <div class="product-card-body">
+              <h3 class="product-card-title">Boissons &amp; Alcools</h3>
+              <p class="product-card-desc">Bières polonaises emblématiques, eaux minérales, jus de fruits et vodkas de qualité supérieure.</p>
+              <ul class="product-list" aria-label="Produits disponibles">
+                <li>Żywiec &amp; Tyskie</li>
+                <li>Okocim &amp; Lech</li>
+                <li>Żubrówka &amp; Wyborowa</li>
+                <li>Kompot &amp; Kefir</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Surgelés -->
+          <article class="product-card animate-card" role="listitem">
+            <div class="product-card-media product-card-media--frozen">
+              <div class="product-card-emoji" aria-hidden="true">🥟</div>
+              <div class="product-card-bg-pattern" aria-hidden="true"></div>
+            </div>
+            <div class="product-card-body">
+              <div class="product-card-tag product-card-tag--blue">Surgelés</div>
+              <h3 class="product-card-title">Plats &amp; Surgelés</h3>
+              <p class="product-card-desc">Pierogi aux différentes farces, gołąbki, blintz — des recettes familiales prêtes à cuisiner chez vous.</p>
+              <ul class="product-list" aria-label="Produits disponibles">
+                <li>Pierogi ruskie &amp; z mięsem</li>
+                <li>Gołąbki (choux farcis)</li>
+                <li>Kopytka (gnocchis polonais)</li>
+                <li>Placki ziemniaczane</li>
+              </ul>
+            </div>
+          </article>
+
+        </div><!-- end products-grid -->
+
+        <div class="products-more animate-fade">
+          <p>Et bien plus encore — plus de <strong>500 références</strong> vous attendent en magasin.</p>
+          <a href="#contact" class="btn btn-outline">
+            Visiter le magasin
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         ABOUT / STORY SECTION
+    ═══════════════════════════════════════════ -->
+    <section class="section about-section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-content">
+            <div class="section-tag animate-fade">Notre histoire</div>
+            <h2 class="section-title animate-up" id="about-heading">
+              Un pont entre<br>deux cultures
+            </h2>
+            <div class="about-body animate-up">
+              <p>
+                Malinka est née d'une passion simple : rendre accessibles les saveurs d'enfance aux membres de la communauté polonaise installée dans le Nord de la France, tout en faisant découvrir ces trésors culinaires aux Lillois curieux et gourmands.
+              </p>
+              <p>
+                Notre supermarché, situé au cœur de Faches-Thumesnil, est bien plus qu'une épicerie. C'est un véritable voyage gustatif à travers la Pologne, l'Ukraine, la République tchèque, la Roumanie et d'autres pays d'Europe centrale et orientale.
+              </p>
+              <p>
+                Nous sélectionnons rigoureusement chaque produit — priorité à l'authenticité, à la qualité et aux producteurs artisanaux. Parce que chaque saveur mérite d'être préservée.
+              </p>
+            </div>
+            <div class="about-values animate-up" role="list" aria-label="Nos valeurs">
+              <div class="about-value" role="listitem">
+                <div class="about-value-icon" aria-hidden="true">🌿</div>
+                <div>
+                  <strong>Authenticité</strong>
+                  <span>Produits directement importés</span>
+                </div>
+              </div>
+              <div class="about-value" role="listitem">
+                <div class="about-value-icon" aria-hidden="true">🤝</div>
+                <div>
+                  <strong>Proximité</strong>
+                  <span>Une équipe à votre écoute</span>
+                </div>
+              </div>
+              <div class="about-value" role="listitem">
+                <div class="about-value-icon" aria-hidden="true">⭐</div>
+                <div>
+                  <strong>Qualité</strong>
+                  <span>Sélection rigoureuse</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-visual animate-right">
+            <div class="about-img-stack">
+              <div class="about-img-main">
+                <img
+                  src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAEJEhXtcSckzx_qsa1-R-lQXv1hBLa4NRcft1-uisgIPqw0dvU_KgZsG01iQQ_Un3n6LiFAjXNy9eN-ByUeOcHk_qnSH07Pt-v3PBkG5hst9TG2do2GJyN8Jauc_x7TeGkDFoHL=s435-k-no"
+                  alt="Vue intérieure du magasin Malinka, rayons bien achalandés"
+                  loading="lazy"
+                >
+              </div>
+              <div class="about-img-secondary">
+                <img
+                  src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAF3zVSkojBnq1yjzK_Hh8snnIOvJQaIjiHmefBB2zojmBAT9x7KUfC6joxjWJHB59bFAKGfz2ZLYSvdqc_CR3rENROTM200eEgQQ446O3K_-Occ0ubf-uRO0YTjGTPA_-XzzC2Z=s580-k-no"
+                  alt="Produits variés disponibles chez Malinka Supermarché"
+                  loading="lazy"
+                >
+              </div>
+              <div class="about-img-badge" aria-label="Ouvert depuis plusieurs années">
+                <span class="about-img-badge-num">+500</span>
+                <span class="about-img-badge-text">références<br>disponibles</span>
+              </div>
+            </div>
+          </div>
+        </div><!-- end about-grid -->
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         GALLERY SECTION
+    ═══════════════════════════════════════════ -->
+    <section class="section gallery-section" id="galerie" aria-labelledby="gallery-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag animate-fade">Galerie</div>
+          <h2 class="section-title animate-up" id="gallery-heading">Le magasin en images</h2>
+        </div>
+      </div>
+      <div class="gallery-grid animate-fade" role="list" aria-label="Photos du magasin">
+        <div class="gallery-item gallery-item--large" role="listitem">
+          <img
+            src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAGbVq8mo7XakbdVrcYBcZtMg9erbjSV0tkx5dFGNW-wAtzcRFovabnfH5i0GUZPaiHDQ9GG8WHvhI_c1-N4T5g98MjAiYVU-AF5Gi0ukMKkJZOrFE0TyaynCV_svcoPVn_Vs7NNdA=s668-k-no"
+            alt="Rayon produits polonais au Malinka Supermarché"
+            loading="lazy"
+          >
+          <div class="gallery-overlay" aria-hidden="true">
+            <span>Nos rayons</span>
+          </div>
+        </div>
+        <div class="gallery-item" role="listitem">
+          <img
+            src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAEJEhXtcSckzx_qsa1-R-lQXv1hBLa4NRcft1-uisgIPqw0dvU_KgZsG01iQQ_UN3n6LiFAjXNy9eN-ByUeOcHk_qnSH07Pt-v3PBkG5hst9TG2do2GJyN8Jauc_x7TeGkDFoHL=s435-k-no"
+            alt="Vue générale du supermarché polonais Malinka"
+            loading="lazy"
+          >
+          <div class="gallery-overlay" aria-hidden="true">
+            <span>L'espace de vente</span>
+          </div>
+        </div>
+        <div class="gallery-item" role="listitem">
+          <img
+            src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAF00otla7avqB91mAjRXn6MSsr4XTV8sOhy1CPqZrRuLrlGVg341kCfOrdwWnM6Bd97qMPPvASnZ8GZR1eqpbR9dL0tuB1LKIWW2hEOAsPFRaeoHgMI1LDvIGQc_8WbXRdT1Rdf=s507-k-no"
+            alt="Produits d'épicerie fine Europe de l'Est"
+            loading="lazy"
+          >
+          <div class="gallery-overlay" aria-hidden="true">
+            <span>Produits sélectionnés</span>
+          </div>
+        </div>
+        <div class="gallery-item" role="listitem">
+          <img
+            src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAF3zVSkojBnq1yjzK_Hh8snnIOvJQaIjiHmefBB2zojmBAT9x7KUfC6joxjWJHB59bFAKGfz2ZLYSvdqc_CR3rENROTM200eEgQQ446O3K_-Occ0ubf-uRO0YTjGTPA_-XzzC2Z=s580-k-no"
+            alt="Présentation des spécialités polonaises"
+            loading="lazy"
+          >
+          <div class="gallery-overlay" aria-hidden="true">
+            <span>Spécialités du monde</span>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-cta container">
+        <a href="https://www.facebook.com/Malinka.supermarche/photos" target="_blank" rel="noopener noreferrer" class="btn btn-outline" aria-label="Voir plus de photos sur Facebook">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          Voir plus de photos
+        </a>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         REVIEWS SECTION
+    ═══════════════════════════════════════════ -->
+    <section class="section reviews-section" id="avis" aria-labelledby="reviews-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag animate-fade">Avis clients</div>
+          <h2 class="section-title animate-up" id="reviews-heading">Ce qu'ils disent de nous</h2>
+          <p class="section-desc animate-up">Des centaines de clients satisfaits — voici quelques-uns de leurs témoignages.</p>
+        </div>
+
+        <div class="reviews-grid" role="list" aria-label="Avis de clients">
+
+          <article class="review-card animate-card" role="listitem">
+            <div class="review-header">
+              <div class="review-avatar" aria-hidden="true">A</div>
+              <div class="review-meta">
+                <span class="review-name">Anna K.</span>
+                <span class="review-origin">Cliente fidèle</span>
+              </div>
+              <div class="review-rating" aria-label="Note : 5 étoiles sur 5">
+                <span aria-hidden="true">★★★★★</span>
+              </div>
+            </div>
+            <blockquote class="review-text">
+              <p>Une épicerie polonaise en France qui m'a vraiment surprise. Les rayons sont très bien achalandés, on y trouve pratiquement tout ce qu'on trouve en Pologne. Le personnel est très sympa et parle polonais, ce qui est très agréable quand on est loin de chez soi.</p>
+            </blockquote>
+            <div class="review-tags" aria-label="Catégories mentionnées">
+              <span class="review-tag">Accueil</span>
+              <span class="review-tag">Choix</span>
+            </div>
+          </article>
+
+          <article class="review-card animate-card" role="listitem">
+            <div class="review-header">
+              <div class="review-avatar review-avatar--b" aria-hidden="true">J</div>
+              <div class="review-meta">
+                <span class="review-name">Jean-Michel D.</span>
+                <span class="review-origin">Habitant de Lille</span>
+              </div>
+              <div class="review-rating" aria-label="Note : 5 étoiles sur 5">
+                <span aria-hidden="true">★★★★★</span>
+              </div>
+            </div>
+            <blockquote class="review-text">
+              <p>Charcuterie très bonne, notamment les kabanosy et la kiełbasa fumée — incomparable avec ce qu'on trouve en grande surface. J'ai découvert ce magasin il y a deux ans et je ne pourrais plus m'en passer. Indispensable pour les amateurs de cuisine d'Europe de l'Est.</p>
+            </blockquote>
+            <div class="review-tags" aria-label="Catégories mentionnées">
+              <span class="review-tag">Charcuterie</span>
+              <span class="review-tag">Qualité</span>
+            </div>
+          </article>
+
+          <article class="review-card animate-card" role="listitem">
+            <div class="review-header">
+              <div class="review-avatar review-avatar--c" aria-hidden="true">M</div>
+              <div class="review-meta">
+                <span class="review-name">Magdalena W.</span>
+                <span class="review-origin">Expatriée polonaise</span>
+              </div>
+              <div class="review-rating" aria-label="Note : 5 étoiles sur 5">
+                <span aria-hidden="true">★★★★★</span>
+              </div>
+            </div>
+            <blockquote class="review-text">
+              <p>Choix similaire à un magasin en Pologne — je n'en reviens pas encore ! Ici on trouve vraiment de tout : les conserves de ma grand-mère, le pain de seigle, les pierogi de marque Aster, et même des cosmétiques polonais. C'est un vrai coin de Pologne à Faches.</p>
+            </blockquote>
+            <div class="review-tags" aria-label="Catégories mentionnées">
+              <span class="review-tag">Authenticité</span>
+              <span class="review-tag">Nostalgie</span>
+            </div>
+          </article>
+
+          <article class="review-card animate-card" role="listitem">
+            <div class="review-header">
+              <div class="review-avatar review-avatar--d" aria-hidden="true">S</div>
+              <div class="review-meta">
+                <span class="review-name">Sophie L.</span>
+                <span class="review-origin">Blogueuse culinaire</span>
+              </div>
+              <div class="review-rating" aria-label="Note : 5 étoiles sur 5">
+                <span aria-hidden="true">★★★★★</span>
+              </div>
+            </div>
+            <blockquote class="review-text">
+              <p>Magasin très bien tenu, propre et organisé. Les prix sont honnêtes pour des produits d'importation. J'ai adoré découvrir des produits que je ne connaissais pas du tout — le personnel prend le temps de tout expliquer avec beaucoup de gentillesse.</p>
+            </blockquote>
+            <div class="review-tags" aria-label="Catégories mentionnées">
+              <span class="review-tag">Prix</span>
+              <span class="review-tag">Service</span>
+            </div>
+          </article>
+
+          <article class="review-card animate-card" role="listitem">
+            <div class="review-header">
+              <div class="review-avatar review-avatar--e" aria-hidden="true">P</div>
+              <div class="review-meta">
+                <span class="review-name">Piotr N.</span>
+                <span class="review-origin">Client régulier</span>
+              </div>
+              <div class="review-rating" aria-label="Note : 5 étoiles sur 5">
+                <span aria-hidden="true">★★★★★</span>
+              </div>
+            </div>
+            <blockquote class="review-text">
+              <p>Enfin un vrai magasin polonais dans le secteur de Lille ! On y trouve les bières Żywiec et Tyskie fraîches, le vrai żurek en bocal, la charcuterie de qualité. Les horaires jusqu'à 20h sont vraiment pratiques pour les personnes qui travaillent.</p>
+            </blockquote>
+            <div class="review-tags" aria-label="Catégories mentionnées">
+              <span class="review-tag">Boissons</span>
+              <span class="review-tag">Horaires</span>
+            </div>
+          </article>
+
+          <article class="review-card review-card--cta animate-card" role="listitem">
+            <div class="review-cta-inner">
+              <div class="review-cta-stars" aria-hidden="true">★★★★★</div>
+              <p class="review-cta-score">4,8 / 5</p>
+              <p class="review-cta-sub">Basé sur les avis Google</p>
+              <a href="https://www.facebook.com/Malinka.supermarche/" target="_blank" rel="noopener noreferrer" class="btn btn-primary" aria-label="Laisser un avis sur Facebook">
+                Laisser un avis
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         CONTACT / PRACTICAL INFO
+    ═══════════════════════════════════════════ -->
+    <section class="section contact-section" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag animate-fade">Informations pratiques</div>
+          <h2 class="section-title animate-up" id="contact-heading">Nous rendre visite</h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info animate-up">
+
+            <div class="info-card">
+              <div class="info-card-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div class="info-card-content">
+                <h3 class="info-card-title">Adresse</h3>
+                <address class="info-card-value">
+                  8 Avenue de Bordeaux<br>
+                  59155 Faches-Thumesnil<br>
+                  <small>Hauts-de-France, France</small>
+                </address>
+                <a href="https://maps.google.com/?q=8+Avenue+de+Bordeaux+59155+Faches-Thumesnil" target="_blank" rel="noopener noreferrer" class="info-card-link">
+                  Ouvrir dans Google Maps
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-card-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div class="info-card-content">
+                <h3 class="info-card-title">Horaires d'ouverture</h3>
+                <table class="hours-table" aria-label="Tableau des horaires">
+                  <tbody>
+                    <tr class="hours-row hours-row--today">
+                      <td class="hours-day">Lun – Ven</td>
+                      <td class="hours-time">9h00 – 20h00</td>
+                    </tr>
+                    <tr class="hours-row">
+                      <td class="hours-day">Samedi</td>
+                      <td class="hours-time">9h00 – 20h00</td>
+                    </tr>
+                    <tr class="hours-row">
+                      <td class="hours-day">Dimanche</td>
+                      <td class="hours-time">9h00 – 18h00</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="hours-badge">
+                  <span class="hours-badge-dot" aria-hidden="true"></span>
+                  Ouvert jusqu'à 20h en semaine
+                </div>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-card-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.87a19.79 19.79 0 01-2.94-8.36A2 2 0 012.11 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.45-.45a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              </div>
+              <div class="info-card-content">
+                <h3 class="info-card-title">Téléphone</h3>
+                <a href="tel:0984031084" class="info-phone">09 84 03 10 84</a>
+                <p class="info-card-sub">Du lundi au samedi, aux heures d'ouverture</p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-card-icon info-card-icon--fb" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              </div>
+              <div class="info-card-content">
+                <h3 class="info-card-title">Suivez-nous</h3>
+                <a href="https://www.facebook.com/Malinka.supermarche/" target="_blank" rel="noopener noreferrer" class="info-card-link info-fb-link" aria-label="Page Facebook de Malinka Supermarché">
+                  facebook.com/Malinka.supermarche
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                </a>
+                <p class="info-card-sub">Actualités, promotions et nouveautés</p>
+              </div>
+            </div>
+
+          </div><!-- end contact-info -->
+
+          <div class="contact-map animate-right" aria-label="Carte Google Maps - Localisation du magasin">
+            <iframe
+              src="https://maps.google.com/maps?q=Malinka+Supermarche+8+Avenue+de+Bordeaux+59155+Faches-Thumesnil&output=embed&hl=fr"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Localisation Malinka Supermarché — 8 Av. de Bordeaux, Faches-Thumesnil"
+              aria-label="Carte Google Maps montrant la localisation du Malinka Supermarché"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#hero" class="footer-logo" aria-label="Malinka Supermarché - Retour en haut">
+              <span class="footer-logo-icon" aria-hidden="true">🍓</span>
+              <div>
+                <span class="footer-logo-brand">Malinka</span>
+                <span class="footer-logo-sub">Supermarché</span>
+              </div>
+            </a>
+            <p class="footer-tagline">
+              L'épicerie polonaise et produits d'Europe de l'Est à Faches-Thumesnil — au service de toute la communauté nordiste depuis notre ouverture.
+            </p>
+            <a href="https://www.facebook.com/Malinka.supermarche/" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="Suivre Malinka Supermarché sur Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              Facebook
+            </a>
+          </div>
+
+          <nav class="footer-nav" aria-label="Navigation du pied de page">
+            <h3 class="footer-nav-title">Navigation</h3>
+            <ul role="list">
+              <li><a href="#produits">Nos produits</a></li>
+              <li><a href="#about">Notre histoire</a></li>
+              <li><a href="#galerie">Galerie photos</a></li>
+              <li><a href="#avis">Avis clients</a></li>
+              <li><a href="#contact">Nous trouver</a></li>
+            </ul>
+          </nav>
+
+          <div class="footer-contact" aria-label="Coordonnées">
+            <h3 class="footer-nav-title">Contact</h3>
+            <address>
+              <p>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                8 Av. de Bordeaux<br>59155 Faches-Thumesnil
+              </p>
+              <p>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.87a19.79 19.79 0 01-2.94-8.36A2 2 0 012.11 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.45-.45a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                <a href="tel:0984031084">09 84 03 10 84</a>
+              </p>
+              <p>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                Lun–Sam : 9h–20h<br>Dimanche : 9h–18h
+              </p>
+            </address>
+          </div>
+
+          <div class="footer-hours" aria-label="Horaires résumés">
+            <h3 class="footer-nav-title">Horaires</h3>
+            <div class="footer-hours-badge">
+              <div class="footer-hours-open">
+                <span class="footer-hours-dot" aria-hidden="true"></span>
+                Ouvert maintenant
+              </div>
+              <p class="footer-hours-time">Jusqu'à <strong>20h00</strong></p>
+            </div>
+            <div class="footer-countries" aria-label="Pays représentés">
+              <p class="footer-countries-label">Produits de :</p>
+              <div class="footer-flags" aria-label="Drapeaux des pays représentés">
+                <span title="Pologne" role="img" aria-label="Pologne">🇵🇱</span>
+                <span title="Ukraine" role="img" aria-label="Ukraine">🇺🇦</span>
+                <span title="République tchèque" role="img" aria-label="République tchèque">🇨🇿</span>
+                <span title="Roumanie" role="img" aria-label="Roumanie">🇷🇴</span>
+                <span title="Lituanie" role="img" aria-label="Lituanie">🇱🇹</span>
+                <span title="Hongrie" role="img" aria-label="Hongrie">🇭🇺</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="footer-copy">© <span id="currentYear"></span> Malinka Supermarché — Faches-Thumesnil, France. Tous droits réservés.</p>
+        <p class="footer-made">Fait avec ❤️ pour la communauté polonaise du Nord</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════
+       SETTINGS PANEL
+  ═══════════════════════════════════════════ -->
+  <div class="settings-overlay" id="settingsOverlay" aria-hidden="true"></div>
+  <aside class="settings-panel" id="settingsPanel" role="dialog" aria-modal="true" aria-label="Panneau de personnalisation" aria-hidden="true">
+    <div class="settings-header">
+      <h2 class="settings-title">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93l-1.41 1.41M12 2v2M4.93 4.93l1.41 1.41M2 12h2m.93 7.07 1.41-1.41M12 20v2m7.07-2.93-1.41-1.41M22 12h-2"/></svg>
+        Personnalisation
+      </h2>
+      <button class="settings-close" id="settingsClose" aria-label="Fermer le panneau de personnalisation">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <div class="settings-body">
+
+      <!-- THEME -->
+      <div class="settings-group">
+        <label class="settings-label">Mode d'affichage</label>
+        <div class="settings-toggle-row">
+          <span class="settings-toggle-label">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+            Clair
+          </span>
+          <button class="settings-toggle" id="themeToggle" role="switch" aria-checked="false" aria-label="Basculer entre mode clair et sombre">
+            <span class="settings-toggle-thumb"></span>
+          </button>
+          <span class="settings-toggle-label">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+            Sombre
+          </span>
+        </div>
+      </div>
+
+      <!-- COLORS -->
+      <div class="settings-group">
+        <label class="settings-label" for="primaryColor">Couleur principale</label>
+        <div class="settings-color-row">
+          <input type="color" id="primaryColor" class="settings-color-input" value="#D41854" aria-label="Choisir la couleur principale">
+          <div class="settings-color-presets" role="group" aria-label="Couleurs prédéfinies pour la couleur principale">
+            <button class="color-preset" style="--c:#D41854;" data-target="primary" data-color="#D41854" aria-label="Rouge Malinka" title="Rouge Malinka"></button>
+            <button class="color-preset" style="--c:#E8445A;" data-target="primary" data-color="#E8445A" aria-label="Rouge vif" title="Rouge vif"></button>
+            <button class="color-preset" style="--c:#C0392B;" data-target="primary" data-color="#C0392B" aria-label="Rouge profond" title="Rouge profond"></button>
+            <button class="color-preset" style="--c:#2980B9;" data-target="primary" data-color="#2980B9" aria-label="Bleu" title="Bleu"></button>
+            <button class="color-preset" style="--c:#27AE60;" data-target="primary" data-color="#27AE60" aria-label="Vert" title="Vert"></button>
+            <button class="color-preset" style="--c:#8E44AD;" data-target="primary" data-color="#8E44AD" aria-label="Violet" title="Violet"></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="settings-group">
+        <label class="settings-label" for="secondaryColor">Couleur secondaire</label>
+        <div class="settings-color-row">
+          <input type="color" id="secondaryColor" class="settings-color-input" value="#FF4D7D" aria-label="Choisir la couleur secondaire">
+          <div class="settings-color-presets" role="group" aria-label="Couleurs prédéfinies pour la couleur secondaire">
+            <button class="color-preset" style="--c:#FF4D7D;" data-target="secondary" data-color="#FF4D7D" aria-label="Rose vif" title="Rose vif"></button>
+            <button class="color-preset" style="--c:#FF8FA3;" data-target="secondary" data-color="#FF8FA3" aria-label="Rose clair" title="Rose clair"></button>
+            <button class="color-preset" style="--c:#F39C12;" data-target="secondary" data-color="#F39C12" aria-label="Orange" title="Orange"></button>
+            <button class="color-preset" style="--c:#3D9E3D;" data-target="secondary" data-color="#3D9E3D" aria-label="Vert accent" title="Vert accent"></button>
+            <button class="color-preset" style="--c:#1ABC9C;" data-target="secondary" data-color="#1ABC9C" aria-label="Turquoise" title="Turquoise"></button>
+            <button class="color-preset" style="--c:#E74C3C;" data-target="secondary" data-color="#E74C3C" aria-label="Rouge coral" title="Rouge coral"></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- TYPOGRAPHY -->
+      <div class="settings-group">
+        <label class="settings-label">Typographie</label>
+        <div class="settings-font-grid" role="group" aria-label="Choix de typographie">
+          <button class="font-option font-option--active" data-font="syne" aria-pressed="true">
+            <span class="font-option-name" style="font-family:'Syne',sans-serif;">Aa</span>
+            <span class="font-option-label">Moderne</span>
+          </button>
+          <button class="font-option" data-font="playfair" aria-pressed="false">
+            <span class="font-option-name" style="font-family:'Playfair Display',serif;">Aa</span>
+            <span class="font-option-label">Classique</span>
+          </button>
+          <button class="font-option" data-font="oswald" aria-pressed="false">
+            <span class="font-option-name" style="font-family:'Oswald',sans-serif;">Aa</span>
+            <span class="font-option-label">Impact</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- RADIUS -->
+      <div class="settings-group">
+        <label class="settings-label" for="radiusSlider">
+          Arrondi des composants
+          <span class="settings-value-label" id="radiusValue">12px</span>
+        </label>
+        <div class="settings-slider-row">
+          <span class="settings-slider-icon" aria-hidden="true">⬛</span>
+          <input type="range" id="radiusSlider" class="settings-slider" min="0" max="24" value="12" step="2" aria-label="Ajuster l'arrondi des coins en pixels">
+          <span class="settings-slider-icon" aria-hidden="true">⬜</span>
+        </div>
+      </div>
+
+      <!-- DENSITY -->
+      <div class="settings-group">
+        <label class="settings-label">Densité de l'interface</label>
+        <div class="settings-density-grid" role="group" aria-label="Choix de densité">
+          <button class="density-option" data-density="compact" aria-pressed="false">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="3" y1="14" x2="21" y2="14"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+            <span>Compact</span>
+          </button>
+          <button class="density-option density-option--active" data-density="comfortable" aria-pressed="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="5" x2="21" y2="5"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="19" x2="21" y2="19"/></svg>
+            <span>Confortable</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- ANIMATIONS -->
+      <div class="settings-group">
+        <div class="settings-toggle-row settings-toggle-row--between">
+          <label class="settings-label" for="animToggle" style="margin:0">Animations</label>
+          <button class="settings-toggle settings-toggle--on" id="animToggle" role="switch" aria-checked="true" aria-label="Activer ou désactiver les animations">
+            <span class="settings-toggle-thumb"></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- RESET -->
+      <button class="settings-reset" id="settingsReset" aria-label="Réinitialiser tous les paramètres">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 102.13-9.36L1 10"/></svg>
+        Réinitialiser les paramètres
+      </button>
+
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
