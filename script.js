@@ -14,7 +14,7 @@
     animations: true,
     density:    'comfortable',
     radius:     12,
-    font:       'syne',
+    font:       'oswald',
   };
 
   /* ─── STORAGE HELPERS ─── */
